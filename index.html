@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+  <title> LeBonAgent !</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="/css/styles.css" rel="stylesheet" type="text/css">    <!-- main css -->
+  
+</head>
+<body>
+
+ <form>
+  <h1> <b> Welcome to (Name) </b> </h1>
+  <p>The app where we help you find the best deal</p>
+  <div id="car">
+  <div class='formInput'>
+    <i class="fa fa-external-link" aria-hidden="true"></i>
+    <!--<img src=".\url.png"/>-->
+    <input class="model" type="text" placeholder="Leboncoin URL"/>
+  </div>
+  </div>
+
+</form>
+
+  <button id="compute" href="#whitespace"> Compute </button>
+
+
+  <div class="whitospaco">
+  </div>
+
+  <div id="actors"></div>
+
+  <script id="template" type="x-tmpl-mustache">
+
+      {{#actors}}
+        <div class="actor">
+          <span>{{who}}</span>
+          <span>{{type}}</span>
+          <span>{{amount}}</span>
+          <br> </br>
+        </div>
+      {{/actors}}
+    </script>
+    
+    <div id="whitespace">
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/d1e8efe0b9.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+    <script src="app.js"></script>
+    <script src="jquery.easing.1.3.js"></script>
+
+</body>
+</html>
